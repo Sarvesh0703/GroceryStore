@@ -4,7 +4,7 @@
     --green: rgb(29, 97, 119);
     --black: #130f40;
     --Light-color: #666;
-    --box-shadow: 0 .1rem 1rem rgba(0, 0, 0.1);
+    --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0.1);
     --border: 2rem solid rgba(0, 0, 0.1);
     --outline: .1rem solid rgba(0, 0, 0.1);
 }
@@ -95,9 +95,9 @@ section {
 }
 
 .header .navbar a {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     margin: 0 1.5rem;
-    color: var(--Light-color);
+    color: #333;
 }
 
 .header .navbar a:hover {
@@ -303,7 +303,7 @@ section {
     background-position: center;
     background-size: cover;
     padding: 17rem;
-    padding-bottom: 10rem;
+    padding-bottom: 20rem;
 }
 
 .home .content {
@@ -342,12 +342,16 @@ section {
     background: #fff;
     outline: var(--outline);
     outline-offset: -1rem;
+    border-radius: 4px;
     text-align: center;
-    box-shadow: var(--box-shadow);
+    /* box-shadow: var(--box-shadow); */
+    transition: .2s linear;
 }
 
 .features .box-container .box1:hover {
     box-shadow: 1px 1px 10px 4px var(--green);
+    outline-offset: 0rem;
+    outline: var(--outline-hover);
 }
 
 .features .box-container .box1 img {
@@ -367,24 +371,20 @@ section {
     padding: 1rem 0;
 }
 
-/* products */
+/* Products Section*/
 
 .products .product-slider {
-    border: 0px solid;
     padding: 1rem;
-}
-
-.products .product-slider:first-child {
-    margin-bottom: 3rem;
 }
 
 .products .product-slider .box3 {
     display: inline-block;
-    border: 0px solid red;
+    /* border: 0px solid red; */
     border-radius: .5rem;
     text-align: center;
     padding: 5rem 5rem;
     outline-offset: -1rem;
+    margin: 0 .2rem;
     outline: var(--outline);
     box-shadow: var(--box-shadow);
     transition: .2s linear;
@@ -393,15 +393,27 @@ section {
 
 .products .product-slider .box3:hover {
     box-shadow: 1px 1px 10px 4px var(--green);
+    outline: var(--outline-hover);
 }
 
 .products .product-slider .box3 img {
-    height: 15rem;
+    height: 12rem;
 }
 
-.products .product-slider .box3 h1 {
+.products .product-slider .box3 h3 {
     font-size: 2rem;
     color: var(--black);
+}
+
+.products .product-slider .box3 .price {
+    font-size: 1.5rem;
+    color: var(--Light-color);
+    padding: .5rem 0;
+}
+
+.products .product-slider .box3 .stars i {
+    font-size: 1.7rem;
+    padding: .5rem 0;
 }
 
 .testimonials {
@@ -577,12 +589,80 @@ section {
     background-color: rgb(14, 56, 70);
 }
 
-.contact i{
-    font-size: 26px;
+.contact i {
+    font-size: 23px;
     padding: 12px;
     cursor: pointer;
 }
 
-.contact i:hover{
+.contact i:hover {
+    color: blue;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+    background: #f1f1f1;
+}
+
+.footer .box {
+    width: 23rem;
+    margin: 2rem;
+    text-align: center;
+}
+
+.footer .box:nth-child(1) {
+    text-align: left;
+}
+
+.footer .box h3 {
+    font-size: 3rem;
+    color: var(--red);
+    padding: 1rem 0;
+}
+
+.footer .box h3 i:hover {
+    color: orangered;
+}
+
+.footer .box p {
+    color: #666;
+    font-size: 1.5rem;
+}
+
+.footer .box a {
+    color: #666;
+    font-size: 1.8rem;
+    display: block;
+    padding: .2rem 0;
+}
+
+.footer .box a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.footer .credit {
+    width: 85%;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    color: #666;
+    text-align: center;
+    border-top: .2rem solid #3333;
+}
+
+.footer span {
+    color: orangered;
+}
+
+.footer .credit i {
+    font-size: 1.8rem;
+    padding: 0 .5rem;
+    cursor: pointer;
+}
+
+.footer .credit i:hover {
     color: blue;
 }
