@@ -1,0 +1,130 @@
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 2rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .header .search-form {
+        width: 90%;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 110%;
+        right: -110%;
+        width: 30rem;
+        box-shadow: var(--box-shadow);
+        border-radius: .5rem;
+        background: #fff;
+    }
+
+    .header .navbar a {
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .heading {
+        font-size: 2.5rem;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .col {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex: 33.33%;
+        max-width: 300px;
+        box-sizing: border-box;
+        padding: 15px;
+    }
+
+    .cont {
+        flex-direction: column;
+    }
+
+    .products .product-slider .box3 {
+        display: block;
+        border: 0px solid red;
+        border-radius: .5rem;
+        text-align: center;
+        padding: 5rem;
+        outline-offset: -1rem;
+        margin: 2rem 0;
+        /* outline: var(--outline);
+        box-shadow: var(--box-shadow);
+        transition: .2s linear;
+        background: #fff; */
+    }
+
+    .contact{
+        height: 480px;
+    }
+    .text-center {
+        padding-top: 10px;
+        text-align: center;
+        font-size: 24px;
+        color: rgb(167, 164, 164);
+    }
+    
+    .form {
+        max-width: 100%;
+        margin: 25px auto;
+    }
+    
+    .form-input {
+        margin: 4px 0px;
+        padding: 8px 13px;
+        width: 100%;
+        font-size: 14px;
+        border: 2px solid silver;
+        border-radius: 6px;
+    }
+    .btn-sm {
+        border: 2px solid;
+        border-radius: 4px;
+        font-size: 20px;
+        padding: 3px 14px;
+        margin-right: 30rem;
+    }
+    .contact i{
+        font-size: 16px;
+        padding: 10px;
+    }
+    .footer .credit i{
+        font-size: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem 8rem;
+    }
+    .footer .credit i:hover{
+        color: blue;
+    }
+}
